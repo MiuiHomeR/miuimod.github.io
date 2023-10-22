@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>MiuiHomeR</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="/favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    </head>
+<body>
+<div class="miuihomer">
+    <header>
+        <img class="logo" src="/images/header.png" alt="Logo" width="270px"/>
+        <div>
+        <el-button>
+            <el-link href="/donate">求赞助</el-link>
+        </el-button>
+        </div>
+    </header>
+    <section>
+        <noscript>
+            <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript
+                enabled. Please enable it to continue.</strong>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+    </section>
+    <footer>
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">薛定谔の鼠</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a
+                href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+</div>
+</body>
 </html>

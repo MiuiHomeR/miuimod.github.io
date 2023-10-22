@@ -1,0 +1,88 @@
+
+body {
+    color: var(--text-color);
+    background: var(--bg);
+}
+body a {
+    color: var(--text-color);
+}
+h1, h2, h3 {
+    line-height: 1.1;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.miuihomer {
+    padding: 50px 0;
+    width: 860px;
+    margin: 0 auto;
+}
+.miuihomer > header {
+    display: block;
+    width: 270px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.miuihomer > footer {
+    display: block;
+    width: 270px;
+    float: left;
+    position: fixed;
+    bottom: 50px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.miuihomer > section {
+    display: block;
+    width: 500px;
+    float: right;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+h1, h2 {
+
+    display: none;
+
+}
+
+img {
+    width: 400px;
+    border-radius: 20px;
+}
+.logo {
+    width: 270px;
+}
+.markdown-body {
+    background-color: var(--bg);
+}
+/* 根据系统的深色模式响应深色变量 */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #fff;
+        --text-color: #282c34;
+        --borderColor: #2c2c3a;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #282c34;
+        --text-color: #efefef;
+        --borderColor: #2c2c3a;
+    }
+}
