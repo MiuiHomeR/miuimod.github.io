@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <md class="markdown-body"></md>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import md from './md/MiuiHomeR.md'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    md
   }
 }
 </script>
