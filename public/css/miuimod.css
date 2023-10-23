@@ -1,0 +1,28 @@
+
+.miuimod {
+    padding: 50px 0;
+    width: 860px;
+    margin: 0 auto;
+}
+.miuimod > header {
+    display: block;
+    width: 270px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.miuimod > footer {
+    display: block;
+    width: 270px;
+    float: left;
+    position: fixed;
+    bottom: 50px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.miuimod > section {
+    display: block;
+    width: 500px;
+    float: right;
+    padding-top: 0;
+    padding-bottom: 0;
+}

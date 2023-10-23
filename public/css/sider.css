@@ -1,0 +1,7 @@
+.siderbar > div > .el-button{
+    width: 100px;
+}
+
+.siderbar > div {
+    margin: 20px 0;
+}

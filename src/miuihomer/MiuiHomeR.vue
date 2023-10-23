@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <md class="markdown-body"/>
-    <el-checkbox v-model="checked1" disabled>备选项1</el-checkbox>
-    <el-checkbox v-model="checked2" disabled>备选项</el-checkbox>
+  <div class="miuihomer">
+    <el-card class="history" header="修改历史" shadow="hover">
+      <md class="markdown-body"/>
+    </el-card>
   </div>
 </template>
 
 <script>
-import md from './MiuiHomeR.md'
+import md from './history.md'
 
 export default {
   name: 'app',
@@ -28,4 +28,5 @@ export default {
 img {
   width: 500px;
 }
+
 </style>

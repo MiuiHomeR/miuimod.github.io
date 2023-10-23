@@ -1,5 +1,5 @@
 <template>
-  <div align="center">
+  <div align="center" class="siderbar">
   <div>
   <el-button>首页</el-button>
   </div>
