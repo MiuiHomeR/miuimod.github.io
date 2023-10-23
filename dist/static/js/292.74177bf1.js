@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmiuimod_github_io"]=self["webpackChunkmiuimod_github_io"]||[]).push([[292],{1292:function(i,n,t){t.r(n),t.d(n,{default:function(){return f}});var u=function(){var i=this;i._self._c;return i._m(0)},e=[function(){var i=this,n=i._self._c;return n("div",[n("h3",[i._v("QQ频道：MiuiHomeR")]),n("img",{attrs:{src:t(8466),alt:"QQChannel"}})])}],r={name:"app"},s=r,a=t(1001),c=(0,a.Z)(s,u,e,!1,null,"6c269402",null),f=c.exports},8466:function(i,n,t){i.exports=t.p+"static/img/QQChannel.dff40562.jpg"}}]);
+//# sourceMappingURL=292.74177bf1.js.map
