@@ -14,9 +14,7 @@ module.exports = {
     },
     assetsDir: 'static',
     parallel: false,
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/miuimod.github.io/'
-        : '/',
+    publicPath: '/',
     devServer: {
         port: 5000,
         open: true,
