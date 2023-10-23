@@ -1,10 +1,5 @@
-const { defineConfig } = require('@vue/cli-service')
+require('@vue/cli-service')
 module.exports = {
-    method:
-        defineConfig({
-            transpileDependencies: true
-        })
-    ,
     chainWebpack: (config) => {
         config.module.rule('md')
             .test(/\.md/)
@@ -17,7 +12,13 @@ module.exports = {
                 raw: true
             })
     },
+    assetsDir: 'static',
+    parallel: false,
     publicPath: process.env.NODE_ENV === 'production'
         ? '/miuimod.github.io/'
-        : '/'
+        : '/',
+    devServer: {
+        port: 5000,
+        open: true,
+    }
 }
