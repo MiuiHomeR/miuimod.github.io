@@ -1,5 +1,10 @@
-
+const { defineConfig } = require('@vue/cli-service')
 module.exports = {
+    method:
+        defineConfig({
+            transpileDependencies: true
+        })
+    ,
     chainWebpack: (config) => {
         config.module.rule('md')
             .test(/\.md/)

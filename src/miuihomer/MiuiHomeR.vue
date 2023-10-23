@@ -10,7 +10,7 @@
 import md from './MiuiHomeR.md'
 
 export default {
-  name: 'MiuiHomeR',
+  name: 'app',
   components: {
     md
   },
