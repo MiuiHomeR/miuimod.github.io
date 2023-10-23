@@ -14,7 +14,7 @@ module.exports = {
     },
     assetsDir: 'static',
     parallel: false,
-    publicPath: './',
+    publicPath: '/',
     devServer: {
         port: 5000,
         open: true,
