@@ -35,8 +35,11 @@ export default {
     }
   },
   created() {
-    if (screen.width > 1080 ) {
+    if (screen.width >= 1080 ) {
       this.span = 24
+    }
+    else if ( screen.width <= 540) {
+      this.span = 8
     }
   }
 }
