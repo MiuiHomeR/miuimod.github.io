@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'MiSans';
+    src: url('../fonts/MiSansVF.ttf');
+}
+
+:root {
+    font-family: 'MiSans';
+}
 
 body {
     color: var(--text-color);
     background: var(--bg);
+    --checkbox-size: 20px;
 }
 body a {
     color: var(--text-color);
@@ -38,7 +47,7 @@ img {
     border-radius: 20px;
 }
 .logo {
-    width: 270px;
+    width: 100%;
 }
 .markdown-body {
     background-color: var(--bg);
@@ -53,10 +62,11 @@ background: var(--bg);
         --bg: #fff;
         --text-color: #282c34;
         --borderColor: #2c2c3a;
+        --card-bg: #ececec;
     }
     .markdown-body {
-        --color-canvas-default: var(--bg);
-        --color-canvas-subtle: var(--bg);
+        --color-canvas-default: var(--card-bg);
+        --color-canvas-subtle: var(--card-bg);
         --color-border-default: var(--bg);
         --color-border-muted: var(--bg);
     }
@@ -66,10 +76,11 @@ background: var(--bg);
         --bg: #282c34;
         --text-color: #efefef;
         --borderColor: #2c2c3a;
+        --card-bg: #191919;
     }
     .markdown-body {
-        --color-canvas-default: var(--bg);
-        --color-canvas-subtle: var(--bg);
+        --color-canvas-default: var(--card-bg);
+        --color-canvas-subtle: var(--card-bg);
         --color-border-default: var(--bg);
         --color-border-muted: var(--bg);
     }

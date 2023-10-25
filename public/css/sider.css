@@ -1,7 +1,7 @@
-.siderbar > div > .el-button{
-    width: 100px;
+.siderbar > .el-row > .el-col > .el-button{
+    width: 96px;
 }
 
-.siderbar > div {
-    margin: 20px 0;
+.siderbar > .el-row > .el-col {
+    margin: 10px 0;
 }
