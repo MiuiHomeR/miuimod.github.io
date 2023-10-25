@@ -1,8 +1,3 @@
-:root {
-    --mod-width: 860px;
-    --sider-width: 270px;
-    --section-width: 560px;
-}
 
 .miuimod {
     padding: 50px 0;
@@ -33,11 +28,6 @@
 }
 
 @media print,screen and (max-width: 1080px) {
-    :root {
-        --mod-width: 80%;
-        --sider-width: 80%;
-        --section-width: 80%;
-    }
     .miuimod > header {
         float:none;
         position:static;

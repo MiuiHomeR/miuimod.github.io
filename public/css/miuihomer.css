@@ -29,6 +29,7 @@
 .el-checkbox {
     font-size: var(--checkbox-size);
     background: var(--card-bg);
+    font-weight: bold;
 }
 .el-checkbox__inner {
     width: var(--checkbox-size);
@@ -40,13 +41,18 @@
     top: 2%;
     width: 40%;
 }
-.el-checkbox__input.is-disabled + span.el-checkbox__label {
-    color: var(--text-color);
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+    background-color: var(--card-bg);
+    border-color: var(--text-color);
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+    border-color: var(--text-color);
+}
+.el-checkbox__input.is-disabled + .el-checkbox__label {
     cursor: not-allowed;
 }
 
 .el-checkbox__input.is-checked + .el-checkbox__label {
-    color: var(--text-color);
 }
 
 .el-checkbox__label {

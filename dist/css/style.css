@@ -56,6 +56,20 @@ img {
 margin: 0;
 background: var(--bg);
 }
+
+:root {
+    --mod-width: 860px;
+    --sider-width: 270px;
+    --section-width: 560px;
+}
+
+@media print,screen and (max-width: 1080px) {
+    :root {
+        --mod-width: 80%;
+        --sider-width: 80%;
+        --section-width: 80%;
+    }
+}
 /* 根据系统的深色模式响应深色变量 */
 @media (prefers-color-scheme: light) {
     :root {
