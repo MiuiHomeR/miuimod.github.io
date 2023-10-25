@@ -1,0 +1,58 @@
+:root {
+    --mod-width: 860px;
+    --sider-width: 270px;
+    --section-width: 560px;
+}
+
+.miuimod {
+    padding: 50px 0;
+    width: var(--mod-width);
+    margin: 0 auto;
+}
+.miuimod > header {
+    display: block;
+    width: var(--sider-width);
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.miuimod > footer {
+    display: block;
+    width: var(--sider-width);
+    float: left;
+    position: fixed;
+    bottom: 50px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.miuimod > section {
+    display: block;
+    width: var(--section-width);
+    float: right;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media print,screen and (max-width: 1080px) {
+    :root {
+        --mod-width: 80%;
+        --sider-width: 80%;
+        --section-width: 80%;
+    }
+    .miuimod > header {
+        float:none;
+        position:static;
+        width:auto;
+    }
+    .miuimod > footer {
+        float:none;
+        position:static;
+        width:auto;
+    }
+    .miuimod > section {
+        float:none;
+        position:static;
+        width:auto;
+    }
+
+}
+

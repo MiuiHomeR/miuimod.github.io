@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'MiSans';
+    src: url('../fonts/MiSansVF.ttf');
+}
+
+:root {
+    font-family: 'MiSans';
+}
 
 body {
     color: var(--text-color);
     background: var(--bg);
+    --checkbox-size: 20px;
 }
 body a {
     color: var(--text-color);
@@ -18,34 +27,6 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-.miuihomer {
-    padding: 50px 0;
-    width: 860px;
-    margin: 0 auto;
-}
-.miuihomer > header {
-    display: block;
-    width: 270px;
-    float: left;
-    position: fixed;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-.miuihomer > footer {
-    display: block;
-    width: 270px;
-    float: left;
-    position: fixed;
-    bottom: 50px;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-.miuihomer > section {
-    display: block;
-    width: 500px;
-    float: right;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
 ul {
     display: block;
     list-style-type: disc;
@@ -66,10 +47,14 @@ img {
     border-radius: 20px;
 }
 .logo {
-    width: 270px;
+    width: 100%;
 }
 .markdown-body {
     background-color: var(--bg);
+}
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre, .markdown-body details {
+margin: 0;
+background: var(--bg);
 }
 /* 根据系统的深色模式响应深色变量 */
 @media (prefers-color-scheme: light) {
@@ -77,6 +62,13 @@ img {
         --bg: #fff;
         --text-color: #282c34;
         --borderColor: #2c2c3a;
+        --card-bg: #ececec;
+    }
+    .markdown-body {
+        --color-canvas-default: var(--card-bg);
+        --color-canvas-subtle: var(--card-bg);
+        --color-border-default: var(--bg);
+        --color-border-muted: var(--bg);
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -84,5 +76,12 @@ img {
         --bg: #282c34;
         --text-color: #efefef;
         --borderColor: #2c2c3a;
+        --card-bg: #191919;
+    }
+    .markdown-body {
+        --color-canvas-default: var(--card-bg);
+        --color-canvas-subtle: var(--card-bg);
+        --color-border-default: var(--bg);
+        --color-border-muted: var(--bg);
     }
 }
