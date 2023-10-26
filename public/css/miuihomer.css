@@ -29,7 +29,7 @@
 .el-checkbox {
     font-size: var(--checkbox-size);
     background: var(--card-bg);
-    font-weight: 650;
+    font-weight: 650 !important;
 }
 .el-checkbox__inner {
     width: var(--checkbox-size);
