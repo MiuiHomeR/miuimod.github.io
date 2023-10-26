@@ -10,7 +10,6 @@ import 'github-markdown-css'
 import 'highlight.js'
 
 import '../public/css/style.css'
-import '../public/css/sider.css'
 import '../public/css/miuimod.css'
 import '../public/css/miuihomer.css'
 

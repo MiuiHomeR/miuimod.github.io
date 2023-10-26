@@ -1,5 +1,5 @@
-require('@vue/cli-service')
-module.exports = {
+const {defineConfig} = require('@vue/cli-service')
+module.exports = defineConfig({
     chainWebpack: (config) => {
         config.module.rule('md')
             .test(/\.md/)
@@ -18,5 +18,5 @@ module.exports = {
     devServer: {
         port: 5000,
         open: true,
-    }
-}
+    },
+})

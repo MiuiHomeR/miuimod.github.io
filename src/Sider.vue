@@ -4,22 +4,22 @@
       <img class="logo" src="../public/images/header.png" alt="Logo" style="width: 100%;"/>
       <el-row>
         <el-col :span="span">
-          <el-button disabled="true">首页</el-button>
+          <el-button disabled>首页</el-button>
         </el-col>
         <el-col :span="span">
-          <el-button disabled="true">桌面</el-button>
+          <el-button disabled>桌面</el-button>
         </el-col>
         <el-col :span="span">
-          <el-button disabled="true">搜索</el-button>
+          <el-button disabled>搜索</el-button>
         </el-col>
         <el-col :span="span">
-          <el-button disabled="true">负一屏</el-button>
+          <el-button disabled>负一屏</el-button>
         </el-col>
         <el-col :span="span">
-          <el-button disabled="true">QQ频道</el-button>
+          <el-button disabled>QQ频道</el-button>
         </el-col>
         <el-col :span="span">
-          <el-button disabled="true">求赞助</el-button>
+          <el-button disabled>求赞助</el-button>
         </el-col>
       </el-row>
     </div>
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import '../public/css/sider.css'
 export default {
   name: 'app',
   data() {

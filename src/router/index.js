@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import MiuiHomeR from '../miuihomer/MiuiHomeR.vue'
+
+const MiuiHomeR = () => import('../miuihomer/MiuiHomeR.vue')
+
+const Donate = () => import('../md/donate.vue')
+
+const QQchannel = () => import('../md/QQchannel.vue')
+
+
 
 Vue.use(VueRouter)
 
@@ -13,15 +20,15 @@ const routes = [
     }
   },
   {
-    path: '/donate',
-    component: () => import('../md/donate.vue'),
+    path: '/dist/donate',
+    component: Donate,
     meta:{
       title: '赞助'
     }
   },
   {
-    path: '/qqchannel',
-    component: () => import('../md/QQchannel.vue'),
+    path: '/dist/qqchannel',
+    component: QQchannel,
     meta:{
       title: 'QQ频道'
     }
