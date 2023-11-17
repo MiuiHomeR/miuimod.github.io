@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkmiuimod_github_io"]=self["webpackChunkmiuimod_github_io"]||[]).push([[734],{4734:function(i,t,n){n.r(t),n.d(t,{default:function(){return l}});var u=function(){var i=this;i._self._c;return i._m(0)},r=[function(){var i=this,t=i._self._c;return t("div",[t("h3",[i._v("赞助")]),t("img",{attrs:{src:n(3560),alt:"Alipay"}})])}],c={name:"app"},e=c,s=n(1001),a=(0,s.Z)(e,u,r,!1,null,"7cc450d2",null),l=a.exports},3560:function(i,t,n){i.exports=n.p+"static/img/Alipay.5f6b9548.png"}}]);
-//# sourceMappingURL=734.3269f053.js.map

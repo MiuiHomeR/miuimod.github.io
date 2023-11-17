@@ -1,34 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const MiuiHomeR = () => import('../miuihomer/MiuiHomeR.vue')
-
-const Donate = () => import('../md/donate.vue')
-
-const QQchannel = () => import('../md/QQchannel.vue')
-
-
-
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    component: MiuiHomeR,
+    component: () => import(/* webpackChunkName: 'Home' */ '../miuihomer/MiuiHomeR.vue'),
     meta:{
       title: 'MiuiHomeR'
     }
   },
   {
-    path: '/dist/donate',
-    component: Donate,
+    path: '/donate',
+    component: () => import(/* webpackChunkName: 'donate' */ '../md/donate.vue'),
     meta:{
       title: '赞助'
     }
   },
   {
-    path: '/dist/qqchannel',
-    component: QQchannel,
+    path: '/qqchannel',
+    component: () => import(/* webpackChunkName: 'qqchannel' */ '../md/QQchannel.vue'),
     meta:{
       title: 'QQ频道'
     }
