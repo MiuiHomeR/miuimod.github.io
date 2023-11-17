@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="donate">
     <h3>赞助</h3>
     <img src="../img/Alipay.png" alt="Alipay">
   </div>
@@ -8,7 +8,6 @@
 <script>
 export default {
   name: 'app',
-
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="qqchannel">
     <h3>QQ频道：MiuiHomeR</h3>
     <img src="../img/QQChannel.jpg" alt="QQChannel">
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "app"
+  name: 'app',
 }
 </script>
 
