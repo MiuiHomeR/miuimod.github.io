@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r https://github.com/miuimod/miuimod.github.io.git -b gh-pages"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "element-ui": "^2.15.14",
+    "gh-pages": "^6.0.0",
     "vue": "^2.5.17",
     "vue-markdown": "^2.2.4",
     "vue-router": "^3.6.5"
