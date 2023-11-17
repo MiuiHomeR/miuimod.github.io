@@ -1,0 +1,64 @@
+
+.miuihomer {
+    background: var(--bg);
+}
+
+.markdown-body {
+    background-color: var(--card-bg);
+}
+
+.el-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid #222;
+}
+
+.el-card__header {
+    padding: 5px 15px;
+    border-bottom: 1px dashed #fff;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-size: 2em;
+}
+
+.el-card__body {
+    padding: 0 0 5px 0;
+    background: var(--card-bg);
+}
+
+.el-checkbox {
+    font-size: var(--checkbox-size);
+    background: var(--card-bg);
+    font-family: 'MiSans' !important;
+    font-weight: 650 !important;
+}
+.el-checkbox__inner {
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+}
+.el-checkbox__inner::after {
+    height: 70%;
+    left: 30%;
+    top: 2%;
+    width: 40%;
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+    background-color: var(--card-bg);
+    border-color: var(--text-color);
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+    border-color: var(--text-color);
+}
+.el-checkbox__input.is-disabled + .el-checkbox__label {
+    cursor: not-allowed;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+}
+
+.el-checkbox__label {
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 19px;
+    font-size: var(--checkbox-size);
+}

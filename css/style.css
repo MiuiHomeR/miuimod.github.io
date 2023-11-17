@@ -1,0 +1,98 @@
+
+:root {
+    font-family: 'Mi-Sans';
+
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg);
+    --checkbox-size: 20px;
+}
+body a {
+    color: var(--text-color);
+}
+h1, h2, h3 {
+    line-height: 1.1;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+h1, h2 {
+
+    display: none;
+
+}
+
+img {
+    width: 400px;
+    border-radius: 20px;
+}
+.logo {
+    width: 100%;
+}
+.markdown-body {
+    background-color: var(--bg);
+}
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre, .markdown-body details {
+margin: 0;
+background: var(--bg);
+}
+
+:root {
+    --mod-width: 860px;
+    --sider-width: 270px;
+    --section-width: 560px;
+}
+
+@media print,screen and (max-width: 1080px) {
+    :root {
+        --mod-width: 80%;
+        --sider-width: 80%;
+        --section-width: 80%;
+    }
+}
+/* 根据系统的深色模式响应深色变量 */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #fff;
+        --text-color: #282c34;
+        --borderColor: #2c2c3a;
+        --card-bg: #ececec;
+    }
+    .markdown-body {
+        --color-canvas-default: var(--card-bg);
+        --color-canvas-subtle: var(--card-bg);
+        --color-border-default: var(--bg);
+        --color-border-muted: var(--bg);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #282c34;
+        --text-color: #efefef;
+        --borderColor: #2c2c3a;
+        --card-bg: #191919;
+    }
+    .markdown-body {
+        --color-canvas-default: var(--card-bg);
+        --color-canvas-subtle: var(--card-bg);
+        --color-border-default: var(--bg);
+        --color-border-muted: var(--bg);
+    }
+}
