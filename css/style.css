@@ -1,11 +1,6 @@
 
-@font-face {
-    font-family: 'Mi-Sans';
-    src: url("https://font.sec.miui.com/font/css?family=MiSans:400,450,650,700:Chinese_Simplify,Latin&amp;display=optional") format('ttf');
-}
-
 :root {
-    font-family: 'Mi-Sans' !important;
+    font-family: 'MiSans' !important;
 }
 
 body {

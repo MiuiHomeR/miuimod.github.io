@@ -29,7 +29,6 @@
 .el-checkbox {
     font-size: var(--checkbox-size);
     background: var(--card-bg);
-    font-family: 'Mi-Sans' !important;
     font-weight: 650 !important;
 }
 .el-checkbox__inner {
