@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Mi-Sans';
-    src: url("https://font.sec.miui.com/font/css?family=MiSans:400,450,650,700:Chinese_Simplify,Latin&amp;display=optional");
+    src: url("https://font.sec.miui.com/font/css?family=MiSans:400,450,650,700:Chinese_Simplify,Latin&amp;display=optional") format('ttf');
 }
 
 :root {
